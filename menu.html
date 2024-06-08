@@ -470,43 +470,27 @@
                                 </table>
                             </div>
                             <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
-                                <div class="col-6 col-12">
-                                    <input type="text" name="name" id="name" value="" placeholder="Name" required>
-                                </div>
-                                <br>
-                                <div class="col-6">
-                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
-                                </div>
-                                <br>
-                                <div class="col-6">
-                                    <select name="amount" id="amount" required>
+                                <div style="flex: 1; display: flex; flex-direction: column;">
+                                    <input type="text" name="name" id="name" value="" placeholder="Name" required style="margin-bottom: 10px;">
+                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required style="margin-bottom: 10px;">
+                                    <select name="amount" id="amount" required style="margin-bottom: 10px;">
                                         <option value="">- Choose Amount -</option>
                                         <option value="1 strawberry pie">1</option>
                                         <option value="2 strawberry pie">2</option>
                                         <option value="Custom Order Strawberry Pie">Different Amount (Type Below)</option>
                                     </select>
-                                </div>
-                                <br>
-                                <div class="col-6">
-                                    <select name="size" id="size" required>
+                                    <select name="size" id="size" required style="margin-bottom: 10px;">
                                         <option value="">- Choose Size -</option>
                                         <option value="6 in. strawberry">6 in.</option>
                                         <option value="9 in. strawberry">9 in.</option>
                                     </select>
+                                    <textarea name="message" id="message" placeholder="Add a message" rows="1" style="margin-bottom: 10px;"></textarea>
+                                    <input type="submit" value="Submit Order">
                                 </div>
-                                <br>
-                                <div class="col-12">
-                                    <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
-                                </div>
-                                <br>
-                                <ul class="actions">
-                                    <li>
-                                        <input type="submit" value="Submit Order">
-                                    </li>
-                                </ul>
                             </form>
                         </article>
                     </div>
+
 
                 </div>
             </div>
