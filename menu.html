@@ -47,15 +47,15 @@
         <div class="container">
             <header class="major">
                 <h2>Our Menu</h2>
-            <section id="bread">
-            </section>
+                <section id="bread">
+                </section>
             </header>
-            
+
             <header class="major">
-                
-                    <h2>Breads</h2>
-                    <h3>The fresh bread you didn't know you needed!</h3>
-                
+
+                <h2>Breads</h2>
+                <h3>The fresh bread you didn't know you needed!</h3>
+
             </header>
 
             <div class="row">
@@ -205,10 +205,10 @@
             <section id="pie">
             </section>
             <header class="major">
-                
-                    <h2>Pies</h2>
-                    <h3>Flaky crusts, tons of flavors, tons of YUM!</h3>
-                
+
+                <h2>Pies</h2>
+                <h3>Flaky crusts, tons of flavors, tons of YUM!</h3>
+
             </header>
 
             <br>
@@ -217,7 +217,7 @@
                     <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
                         <article class="box post">
                             <a href="#" class="image fit">
-                                <img src="images/ApplePie.jpg" alt="Rainbow macarons">
+                                <img src="images/ApplePie.jpg" alt="Apple Pie">
                             </a>
                             <h3>Apple Pie</h3>
                             <div class="table-wrapper">
@@ -244,7 +244,7 @@
                                 </div>
                                 <br>
                                 <div class="col-6">
-                                    <select name="category" id="category" required>
+                                    <select name="amount" id="amount" required>
                                         <option value="">- Choose Amount -</option>
                                         <option value="1 apple pie">1</option>
                                         <option value="2 apple pie">2</option>
@@ -253,10 +253,10 @@
                                 </div>
                                 <br>
                                 <div class="col-6">
-                                    <select name="category" id="category" required>
+                                    <select name="size" id="size" required>
                                         <option value="">- Choose Size -</option>
                                         <option value="6 in. apple">6 in.</option>
-                                        <option value="12 in. apple">12 in.</option>
+                                        <option value="9 in. apple">9 in.</option>
                                     </select>
                                 </div>
                                 <br>
@@ -275,61 +275,59 @@
                     <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
                         <article class="box post">
                             <a href="#" class="image fit">
-                                <img src="images/PeachPie.jpg" alt="Rainbow macarons">
+                                <img src="images/PeachPie.jpg" alt="Peach Pie">
                             </a>
-                            
-                                <h3>Peach Pie</h3>
-                                <div class="table-wrapper">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>9 in. = </td>
-                                                <td>$12</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6 in. = </td>
-                                                <td>$6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <h3>Peach Pie</h3>
+                            <div class="table-wrapper">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>9 in. = </td>
+                                            <td>$12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6 in. = </td>
+                                            <td>$6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
+                                <div class="col-6 col-12">
+                                    <input type="text" name="name" id="name" value="" placeholder="Name" required>
                                 </div>
-                                <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
-                                    <div class="col-6 col-12">
-                                        <input type="text" name="name" id="name" value="" placeholder="Name" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6 col-12-large">
-                                        <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6">
-                                        <select name="category" id="category" required>
-                                            <option value="">- Choose Amount -</option>
-                                            <option value="1 Peach">1</option>
-                                            <option value="2 Peach">2</option>
-                                            <option value="Custom Order Peach Pie">Different Amount (Type Below)</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div class="col-6">
-                                        <select name="category" id="category" required>
-                                            <option value="">- Choose Size -</option>
-                                            <option value="6 in. Peach">6 in.</option>
-                                            <option value="12 in. Peach">12 in.</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div class="col-12">
-                                        <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
-                                    </div>
-                                    <br>
-                                    <ul class="actions">
-                                        <li>
-                                            <input type="submit" value="Submit Order">
-                                        </li>
-                                    </ul>
-                                </form>
-                            
+                                <br>
+                                <div class="col-6 col-12-large">
+                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="amount" id="amount" required>
+                                        <option value="">- Choose Amount -</option>
+                                        <option value="1 peach pie">1</option>
+                                        <option value="2 peach pie">2</option>
+                                        <option value="Custom Order Peach Pie">Different Amount (Type Below)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="size" id="size" required>
+                                        <option value="">- Choose Size -</option>
+                                        <option value="6 in. peach">6 in.</option>
+                                        <option value="9 in. peach">9 in.</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
+                                </div>
+                                <br>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="submit" value="Submit Order">
+                                    </li>
+                                </ul>
+                            </form>
                         </article>
                     </div>
                     <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
@@ -362,19 +360,19 @@
                                 </div>
                                 <br>
                                 <div class="col-6">
-                                    <select name="category" id="category" required>
+                                    <select name="amount" id="amount" required>
                                         <option value="">- Choose Amount -</option>
-                                        <option value="1 Cherry">1</option>
-                                        <option value="2 Cherry">2</option>
+                                        <option value="1 cherry pie">1</option>
+                                        <option value="2 cherry pie">2</option>
                                         <option value="Custom Order Cherry Pie">Different Amount (Type Below)</option>
                                     </select>
                                 </div>
                                 <br>
                                 <div class="col-6">
-                                    <select name="category" id="category" required>
+                                    <select name="size" id="size" required>
                                         <option value="">- Choose Size -</option>
-                                        <option value="6 in. Cherry">6 in.</option>
-                                        <option value="12 in. Cherry">12 in.</option>
+                                        <option value="6 in. cherry">6 in.</option>
+                                        <option value="9 in. cherry">9 in.</option>
                                     </select>
                                 </div>
                                 <br>
@@ -390,134 +388,132 @@
                             </form>
                         </article>
                     </div>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;">
-                        <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
-                            <article class="box post">
-                                <a href="#" class="image fit">
-                                    <img src="images/BlueberryPie.jpg" alt="Blueberry Pie">
-                                </a>
-                                <h3>Blueberry Pie</h3>
-                                <div class="table-wrapper">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>9 in. = </td>
-                                                <td>$12</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6 in. = </td>
-                                                <td>$6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                    <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
+                        <article class="box post">
+                            <a href="#" class="image fit">
+                                <img src="images/BlueberryPie.jpg" alt="Blueberry Pie">
+                            </a>
+                            <h3>Blueberry Pie</h3>
+                            <div class="table-wrapper">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>9 in. = </td>
+                                            <td>$12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6 in. = </td>
+                                            <td>$6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
+                                <div class="col-6 col-12">
+                                    <input type="text" name="name" id="name" value="" placeholder="Name" required>
                                 </div>
-                                <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
-                                    <div class="col-6 col-12">
-                                        <input type="text" name="name" id="name" value="" placeholder="Name" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6 col-12-large">
-                                        <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6">
-                                        <select name="category" id="category" required>
-                                            <option value="">- Choose Amount -</option>
-                                            <option value="1 Blueberry">1</option>
-                                            <option value="2 Blueberry">2</option>
-                                            <option value="Custom Order Blueberry Pie">Different Amount (Type Below)</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div class="col-6">
-                                        <select name="category" id="category" required>
-                                            <option value="">- Choose Size -</option>
-                                            <option value="6 in. Blueberry">6 in.</option>
-                                            <option value="12 in. Blueberry">12 in.</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div class="col-12">
-                                        <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
-                                    </div>
-                                    <br>
-                                    <ul class="actions">
-                                        <li>
-                                            <input type="submit" value="Submit Order">
-                                        </li>
-                                    </ul>
-                                </form>
-                            </article>
-                        </div>
-                        <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
-                            <article class="box post">
-                                <a href="#" class="image fit">
-                                    <img src="images/benrank223.jpeg" alt="Strw Pie">
-                                </a>
-                                <h3>Strawberry Pie</h3>
-                                <div class="table-wrapper">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>9 in. = </td>
-                                                <td>$12</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6 in. = </td>
-                                                <td>$6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <br>
+                                <div class="col-6 col-12-large">
+                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
                                 </div>
-                                <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
-                                    <div class="col-6 col-12">
-                                        <input type="text" name="name" id="name" value="" placeholder="Name" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6 col-12-large">
-                                        <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6">
-                                        <select name="category" id="category" required>
-                                            <option value="">- Choose Amount -</option>
-                                            <option value="1 Strawberry">1</option>
-                                            <option value="2 Strawberry">2</option>
-                                            <option value="Custom Order Strawberry Pie">Different Amount (Type Below)</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div class="col-6">
-                                        <select name="category" id="category" required>
-                                            <option value="">- Choose Size -</option>
-                                            <option value="6 in. Strawberry">6 in.</option>
-                                            <option value="12 in. Strawberry">12 in.</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div class="col-12">
-                                        <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
-                                    </div>
-                                    <br>
-                                    <ul class="actions">
-                                        <li>
-                                            <input type="submit" value="Submit Order">
-                                        </li>
-                                    </ul>
-                                </form>
-                            </article>
-                        </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="amount" id="amount" required>
+                                        <option value="">- Choose Amount -</option>
+                                        <option value="1 blueberry pie">1</option>
+                                        <option value="2 blueberry pie">2</option>
+                                        <option value="Custom Order Blueberry Pie">Different Amount (Type Below)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="size" id="size" required>
+                                        <option value="">- Choose Size -</option>
+                                        <option value="6 in. blueberry">6 in.</option>
+                                        <option value="9 in. blueberry">9 in.</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
+                                </div>
+                                <br>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="submit" value="Submit Order">
+                                    </li>
+                                </ul>
+                            </form>
+                        </article>
+                    </div>
+                    <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
+                        <article class="box post">
+                            <a href="#" class="image fit">
+                                <img src="images/benrank223.jpeg" alt="Strawberry Pie">
+                            </a>
+                            <h3>Strawberry Pie</h3>
+                            <div class="table-wrapper">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>9 in. = </td>
+                                            <td>$12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6 in. = </td>
+                                            <td>$6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
+                                <div class="col-6 col-12">
+                                    <input type="text" name="name" id="name" value="" placeholder="Name" required>
+                                </div>
+                                <br>
+                                <div class="col-6 col-12-large">
+                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="amount" id="amount" required>
+                                        <option value="">- Choose Amount -</option>
+                                        <option value="1 strawberry pie">1</option>
+                                        <option value="2 strawberry pie">2</option>
+                                        <option value="Custom Order Strawberry Pie">Different Amount (Type Below)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="size" id="size" required>
+                                        <option value="">- Choose Size -</option>
+                                        <option value="6 in. strawberry">6 in.</option>
+                                        <option value="9 in. strawberry">9 in.</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
+                                </div>
+                                <br>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="submit" value="Submit Order">
+                                    </li>
+                                </ul>
+                            </form>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
+
             <section id="cookie">
             </section>
             <header class="major">
-                
-                    <h2>Cookies</h2>
-                    <h3>Freshly baked, homemade cookies - every time!</h3>
-                
+
+                <h2>Cookies</h2>
+                <h3>Freshly baked, homemade cookies - every time!</h3>
+
             </header>
 
             <br>
@@ -575,48 +571,48 @@
                             <a href="#" class="image fit">
                                 <img src="images/PeanutButterBlossoms.jpg" alt="Peanut Butter Blossoms">
                             </a>
-                            
-                                <h3>Peanut Butter Blossoms</h3>
-                                <div class="table-wrapper">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>1 Dozen = </td>
-                                                <td>$8,000</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+
+                            <h3>Peanut Butter Blossoms</h3>
+                            <div class="table-wrapper">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 Dozen = </td>
+                                            <td>$8,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
+                                <div class="col-6 col-12">
+                                    <input type="text" name="name" id="name" value="" placeholder="Name" required>
                                 </div>
-                                <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
-                                    <div class="col-6 col-12">
-                                        <input type="text" name="name" id="name" value="" placeholder="Name" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6 col-12-large">
-                                        <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
-                                    </div>
-                                    <br>
-                                    <div class="col-6">
-                                        <select name="category" id="category" required>
-                                            <option value="">- Choose Amount -</option>
-                                            <option value="1/2 Dozen PBB">1/2 Dozen</option>
-                                            <option value="1 Dozen PBB">1 Dozen</option>
-                                            <option value="2 Dozen PBB">2 Dozen</option>
-                                            <option value="Custom Order PBB">Different Amount (Type Below)</option>
-                                        </select>
-                                    </div>
-                                    <br>
-                                    <div class="col-12">
-                                        <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
-                                    </div>
-                                    <br>
-                                    <ul class="actions">
-                                        <li>
-                                            <input type="submit" value="Submit Order">
-                                        </li>
-                                    </ul>
-                                </form>
-                            
+                                <br>
+                                <div class="col-6 col-12-large">
+                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="category" id="category" required>
+                                        <option value="">- Choose Amount -</option>
+                                        <option value="1/2 Dozen PBB">1/2 Dozen</option>
+                                        <option value="1 Dozen PBB">1 Dozen</option>
+                                        <option value="2 Dozen PBB">2 Dozen</option>
+                                        <option value="Custom Order PBB">Different Amount (Type Below)</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
+                                </div>
+                                <br>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="submit" value="Submit Order">
+                                    </li>
+                                </ul>
+                            </form>
+
                         </article>
                     </div>
                     <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
@@ -720,10 +716,10 @@
             <section id="bar">
             </section>
             <header class="major">
-                
-                    <h2>Bars</h2>
-                    <h3>Something about bars</h3>
-                
+
+                <h2>Bars</h2>
+                <h3>Something about bars</h3>
+
             </header>
 
             <br>
@@ -759,7 +755,7 @@
                                         <option value="">- Choose Amount -</option>
                                         <option value="1/2 Dozen Swirl Bars">1/2 Dozen</option>
                                         <option value="1 Dozen Swirl Bars">1 Dozen</option>
-                                       
+
                                         <option value="Custom Order Swirl Bars">Different Amount (Type Below)</option>
                                     </select>
                                 </div>
@@ -806,7 +802,7 @@
                                         <option value="">- Choose Amount -</option>
                                         <option value="1/2 Dozen Blondies">1/2 Dozen</option>
                                         <option value="1 Dozen Blondies">1 Dozen</option>
-                                    
+
                                         <option value="Custom Order Blondies">Different Amount (Type Below)</option>
                                     </select>
                                 </div>
@@ -854,7 +850,7 @@
                                         <option value="">- Choose Amount -</option>
                                         <option value="1/2 Dozen Brownies">1/2 Dozen</option>
                                         <option value="1 Dozen Brownies">1 Dozen</option>
-                                      
+
                                         <option value="Custom Order Brownies">Different Amount (Type Below)</option>
                                     </select>
                                 </div>
