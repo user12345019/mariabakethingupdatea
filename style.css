@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
 }
 
 .container {
@@ -23,28 +23,62 @@ header {
     padding: 20px 0;
 }
 
+.title {
+    font-size: xx-large;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
 .icon-cart {
+    margin-left: auto;
     position: relative;
-    margin-left: auto; /* Align the cart icon to the right */
+}
+
+.icon-cart a {
+    display: flex;
+    align-items: center;
+}
+
+.icon-cart svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
 }
 
 .icon-cart span {
     position: absolute;
     background-color: red;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     color: #fff;
-    top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
-}
-
-.title {
-    font-size: xx-large;
+    top: -10px;
+    right: -10px;
+    font-size: 12px;
 }
 
 .listProduct .item img {
@@ -119,7 +153,7 @@ body.showCart .container {
 .cartTab button {
     background-color: #E8BC0E;
     border: none;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 500;
     cursor: pointer;
 }
@@ -180,40 +214,4 @@ body.showCart .container {
     .listProduct {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-/* Navigation adjustments */
-#nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#nav ul li {
-    margin: 0 10px;
-}
-
-#nav ul li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-#nav ul li.icon-cart a {
-    display: flex;
-    align-items: center;
-}
-
-#nav ul li.icon-cart svg {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-}
-
-#nav ul li.icon-cart span {
-    font-size: 14px;
-    color: #000;
 }
