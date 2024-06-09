@@ -76,18 +76,13 @@ header{
     color: #eee;
     position: fixed;
     top: 0;
-    right: -400px;
+    right: 10%;
     bottom: 0;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
-    transition: .5s;
+    
 }
-body.showCart .cartTab{
-    right: 0;
-}
-body.showCart .container{
-    transform: translateX(-250px);
-}
+
 .cartTab h1{
     padding: 20px;
     margin: 0;
