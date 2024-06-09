@@ -72,6 +72,7 @@ header{
 /* cart */
 .cartTab{
     width: 100%;
+    height: 100%;
     background-color: #353432;
     color: #eee;
     position: fixed;
