@@ -33,7 +33,7 @@ header{
     border-radius: 50%;
     color: #fff;
     top: 50%;
-    right: -20px;
+    right: 20%;
 }
 .title{
     font-size: xx-large;
@@ -99,9 +99,7 @@ header{
     font-weight: 500;
     cursor: pointer;
 }
-.cartTab .close{
-    background-color: #eee;
-}
+
 .listCart .item img{
     width: 100%;
 }
