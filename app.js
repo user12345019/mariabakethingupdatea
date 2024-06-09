@@ -8,12 +8,10 @@ let products = [];
 let cart = [];
 
 
-iconCart.addEventListener('click', () => {
-    body.classList.toggle('showCart');
-})
-closeCart.addEventListener('click', () => {
-    body.classList.toggle('showCart');
-})
+
+    
+
+
 
     const addDataToHTML = () => {
     // remove datas default from HTML
@@ -129,7 +127,7 @@ const changeQuantityCart = (product_id, type) => {
 }
 
 const initApp = () => {
-    // get data product
+    body.classList.toggle('showCart');
     fetch('products.json')
     .then(response => response.json())
     .then(data => {
