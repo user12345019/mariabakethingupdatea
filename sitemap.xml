@@ -15,33 +15,29 @@
 <url>
   <loc>https://thatonebakingplace.github.io/-/index.html</loc>
   <lastmod>2024-06-12T02:44:32+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://thatonebakingplace.github.io/-/menu.html</loc>
   <lastmod>2024-06-12T02:44:32+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://thatonebakingplace.github.io/-/about.html</loc>
   <lastmod>2024-06-12T02:44:32+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://thatonebakingplace.github.io/-/contact.html</loc>
   <lastmod>2024-06-12T02:44:32+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://thatonebakingplace.github.io/-/pies.html</loc>
   <lastmod>2024-06-12T02:44:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://thatonebakingplace.github.io/-/cakes.html</loc>
-  <lastmod>2024-06-12T02:44:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
 
 
 </urlset>
