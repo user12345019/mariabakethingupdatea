@@ -1,53 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<style>
-			/* The overlay */
-			.overlay {
-				position: fixed;
-				/* Fixed position */
-				display: none;
-				/* Hidden by default */
-				width: 100%;
-				/* Full width */
-				height: 100%;
-				/* Full height */
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: rgba(0, 0, 0, 0.955);
-
-				/* Black background with opacity */
-				z-index: 99999999999999999999;
-				/* Specify a stack order in case you're using a different order for other elements */
-				cursor: pointer;
-				/* Add a pointer on hover */
-			}
-
-			/* The "Work in Progress" text */
-			.overlay-text {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				font-size: 50px;
-				color: white;
-				transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-			}
-		</style>
-		<div id="myOverlay" class="overlay">
-			<div class="overlay-text">Not Finished </div>
-		</div>
-		<script>
-			// Get the overlay element
-			var overlay = document.getElementById("myOverlay");
-			// Toggle the visibility of the overlay
-			window.onload = function() {
-				overlay.style.display = "block";
-				document.body.style.overflow = 'hidden';
-			}
-		</script>
 		<title>That One Baking Place</title>
 		<link rel="icon" type="image/x-icon" href="images/favicon.png">
 		<meta charset="utf-8" />
