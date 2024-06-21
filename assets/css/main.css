@@ -2058,7 +2058,8 @@ input, select, textarea {
 /* Image */
 	.benny {
 		float: left;
-		
+		padding: 0 1.5em 1em 0;
+		top: 0.25em;
 	}
 	.image {
 		border-radius: 0.5em;
