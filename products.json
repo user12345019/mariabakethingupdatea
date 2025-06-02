@@ -1,51 +1,435 @@
-[
-    {
-        "id": 1,
-        "name":" LD01 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/1.png"
-    },
-    {
-        "id": 2,
-        "name":" LD02 LOUNGE CHAIR",
-        "price": 250,
-        "image": "image/2.png"
-    },
-    {
-        "id": 3,
-        "name":" LD03 LOUNGE CHAIR",
-        "price": 290,
-        "image": "image/3.png"
-    },
-    {
-        "id": 4,
-        "name":" LD04 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/4.png"
-    },
-    {
-        "id": 5,
-        "name":" LD05 LOUNGE CHAIR",
-        "price": 300,
-        "image": "image/5.png"
-    },
-    {
-        "id": 6,
-        "name":" LD06 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/6.png"
-    },
-    {
-        "id": 7,
-        "name":" LD07 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/7.png"
-    },
-    {
-        "id": 8,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png"
+{
+  "page": {
+    "title": "That One Baking Place"
+  },
+  "header": {
+    "logo": "That One Baking Place",
+    "nav_links": [
+      {"text": "Home", "href": "index.html", "class": "icon solid fa-home scrolly"},
+      {"text": "Menu", "href": "#menu", "class": "icon solid fa-utensils scrolly"},
+      {"text": "About", "href": "about.html", "class": "icon solid fa-user scrolly"},
+      {"text": "Contact", "href": "contact.html", "class": "icon solid fa-envelope scrolly"}
+    ],
+    "dropdown": {
+      "trigger": {"text": "Menu", "href": "#menu", "class": "icon solid fa-utensils scrolly"},
+      "items": [
+        {"text": "Bread", "href": "#bread"},
+        {"text": "Pies", "href": "#pie"},
+        {"text": "Cookies", "href": "#cookie"},
+        {"text": "Bars", "href": "#bar"}
+      ]
     }
-
-]
+  },
+  "menu": {
+    "notice": "Due to rising operational costs some of our products have increased in price <br> Please make orders at least a week in advance to allow adequate time for completion",
+    "title": "Our Menu",
+    "categories": [
+      {
+        "id": "bread",
+        "title": "Breads",
+        "subtitle": "The fresh bread you didn't know you needed!",
+        "products": [
+          {
+            "name": "Refreshing Rolls",
+            "image": "images/rollsmenu.jpg",
+            "alt": "Refreshing Rolls",
+            "pricing": [
+              {"option": "1 Cluster", "price": "$6"},
+              {"option": "1/2 Dozen", "price": "$4"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "1 Cluster", "value": "1 Dozen Refreshing Rolls"},
+                  {"display": "1/2 Dozen", "value": "1/2 Dozen Refreshing Rolls"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Refreshing Rolls"}
+                ]
+              }
+            ],
+            "more_info_link": "RR.html"
+          },
+          {
+            "name": "Cinnamon Rolls",
+            "image": "images/crollsmenu.jpg",
+            "alt": "Cinnamon Rolls",
+            "pricing": [
+              {"option": "1 Cluster", "price": "$16"},
+              {"option": "3 Ct.", "price": "$10"},
+              {"option": "1 Ct.", "price": "$4"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "1 Cluster", "value": "1 Cluster Cinnamon Rolls"},
+                  {"display": "3 Ct.", "value": "3 Cinnamon Rolls"},
+                  {"display": "1 Ct.", "value": "1 Cinnamon Roll"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Cinnamon Rolls"}
+                ]
+              },
+              {
+                "label": "Glaze",
+                "name": "category",
+                "options": [
+                  {"display": "Yes", "value": "Yes Glaze"},
+                  {"display": "No", "value": "No Glaze"}
+                ]
+              }
+            ],
+            "more_info_link": "CR.html"
+          },
+          {
+            "name": "White Bread",
+            "image": "images/breadhome.jpg",
+            "alt": "White Bread",
+            "pricing": [
+              {"option": "1 Loaf", "price": "$3"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "1 Loaf", "value": "1 Loaf White Bread"},
+                  {"display": "2 Loaves", "value": "2 Loaf White Bread"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Loaf White Breads"}
+                ]
+              }
+            ],
+            "more_info_link": "WB.html"
+          }
+        ]
+      },
+      {
+        "id": "pie",
+        "title": "Pies",
+        "subtitle": "Flaky crusts, tons of flavors, tons of YUM!",
+        "products": [
+          {
+            "name": "Apple Pie",
+            "image": "images/ApplePie.jpg",
+            "alt": "Apple Pie",
+            "pricing": [
+              {"option": "9 in.", "price": "$15"},
+              {"option": "6 in.", "price": "$8"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "amount",
+                "options": [
+                  {"display": "1", "value": "1 apple pie"},
+                  {"display": "2", "value": "2 apple pie"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Apple Pie"}
+                ]
+              },
+              {
+                "label": "Choose Size",
+                "name": "size",
+                "options": [
+                  {"display": "6 in.", "value": "6 in. apple"},
+                  {"display": "9 in.", "value": "9 in. apple"}
+                ]
+              }
+            ],
+            "more_info_link": "Apies.html"
+          },
+          {
+            "name": "Peach Pie",
+            "image": "images/PeachPie.jpg",
+            "alt": "Peach Pie",
+            "pricing": [
+              {"option": "9 in.", "price": "$15"},
+              {"option": "6 in.", "price": "$8"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "amount",
+                "options": [
+                  {"display": "1", "value": "1 peach pie"},
+                  {"display": "2", "value": "2 peach pie"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Peach Pie"}
+                ]
+              },
+              {
+                "label": "Choose Size",
+                "name": "size",
+                "options": [
+                  {"display": "6 in.", "value": "6 in. peach"},
+                  {"display": "9 in.", "value": "9 in. peach"}
+                ]
+              }
+            ],
+            "more_info_link": "Ppies.html"
+          },
+          {
+            "name": "Cherry Pie",
+            "image": "images/CherryPie.jpg",
+            "alt": "Cherry Pie",
+            "pricing": [
+              {"option": "9 in.", "price": "$15"},
+              {"option": "6 in.", "price": "$8"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "amount",
+                "options": [
+                  {"display": "1", "value": "1 cherry pie"},
+                  {"display": "2", "value": "2 cherry pie"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Cherry Pie"}
+                ]
+              },
+              {
+                "label": "Choose Size",
+                "name": "size",
+                "options": [
+                  {"display": "6 in.", "value": "6 in. cherry"},
+                  {"display": "9 in.", "value": "9 in. cherry"}
+                ]
+              }
+            ],
+            "more_info_link": "Cpies.html"
+          },
+          {
+            "name": "Blueberry Pie",
+            "image": "images/BlueberryPie.jpg",
+            "alt": "Blueberry Pie",
+            "pricing": [
+              {"option": "9 in.", "price": "$15"},
+              {"option": "6 in.", "price": "$8"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "amount",
+                "options": [
+                  {"display": "1", "value": "1 blueberry pie"},
+                  {"display": "2", "value": "2 blueberry pie"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Blueberry Pie"}
+                ]
+              },
+              {
+                "label": "Choose Size",
+                "name": "size",
+                "options": [
+                  {"display": "6 in.", "value": "6 in. blueberry"},
+                  {"display": "9 in.", "value": "9 in. blueberry"}
+                ]
+              }
+            ],
+            "more_info_link": "Bpies.html"
+          },
+          {
+            "name": "Strawberry Pie",
+            "image": "images/strawing.jpeg",
+            "alt": "Strawberry Pie",
+            "pricing": [
+              {"option": "9 in.", "price": "$15"},
+              {"option": "6 in.", "price": "$8"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "amount",
+                "options": [
+                  {"display": "1", "value": "1 strawberry pie"},
+                  {"display": "2", "value": "2 strawberry pie"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Strawberry Pie"}
+                ]
+              },
+              {
+                "label": "Choose Size",
+                "name": "size",
+                "options": [
+                  {"display": "6 in.", "value": "6 in. strawberry"},
+                  {"display": "9 in.", "value": "9 in. strawberry"}
+                ]
+              }
+            ],
+            "more_info_link": "Spies.html"
+          }
+        ]
+      },
+      {
+        "id": "cookie",
+        "title": "Cookies",
+        "subtitle": "Freshly baked, homemade cookies - every time!",
+        "products": [
+          {
+            "name": "Chocolate Chip",
+            "image": "images/massimo-adami-OtyGZwflKd8-unsplash.jpg",
+            "alt": "Chocolate Chip",
+            "pricing": [
+              {"option": "1 Dozen", "price": "$8"},
+              {"option": "1/2 Dozen", "price": "$4"},
+              {"option": "4 Ct.", "price": "$3"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "1 Dozen", "value": "1 Dozen Choc Chip"},
+                  {"display": "1/2 Dozen", "value": "1/2 Dozen Choc Chip"},
+                  {"display": "4 Ct.", "value": "4 Ct. Choc Chip"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Choc Chip"}
+                ]
+              }
+            ],
+            "more_info_link": "CCC.html"
+          },
+          {
+            "name": "Peanut Butter Blossoms",
+            "image": "images/PeanutButterBlossoms.jpg",
+            "alt": "Peanut Butter Blossoms",
+            "pricing": [
+              {"option": "1 Dozen", "price": "$8"},
+              {"option": "1/2 Dozen", "price": "$4"},
+              {"option": "4 Ct.", "price": "$3"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "1 Dozen", "value": "1 Dozen PBB"},
+                  {"display": "1/2 Dozen", "value": "1/2 Dozen PBB"},
+                  {"display": "4 Ct.", "value": "4 Ct PBB"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order PBB"}
+                ]
+              }
+            ],
+            "more_info_link": "PBB.html"
+          },
+          {
+            "name": "Oatmeal Scotchies",
+            "image": "images/OatmealScotchies.jpg",
+            "alt": "Oatmeal Scotchies",
+            "pricing": [
+              {"option": "1 Dozen", "price": "$8"},
+              {"option": "1/2 Dozen", "price": "$4"},
+              {"option": "4 Ct.", "price": "$3"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "1 Dozen", "value": "1 Dozen Oatmeal Scotchies"},
+                  {"display": "1/2 Dozen", "value": "1/2 Dozen Oatmeal Scotchies"},
+                  {"display": "4 Ct.", "value": "4 Ct. Oatmeal Scotchies"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Oatmeal Scotchies"}
+                ]
+              }
+            ],
+            "more_info_link": "OS.html"
+          }
+        ]
+      },
+      {
+        "id": "bar",
+        "title": "Bars",
+        "subtitle": "Sweet treats the whole family can enjoy! Perfect for every occasion!",
+        "products": [
+          {
+            "name": "Peanut Butter Swirl Bars",
+            "image": "images/SwirlBars.jpg",
+            "alt": "Peanut Butter Swirl Bars",
+            "pricing": [
+              {"option": "6 Ct.", "price": "$6"},
+              {"option": "4 Ct.", "price": "$5"},
+              {"option": "2 Ct.", "price": "$3"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "6 Ct.", "value": "6 Swirl Bars"},
+                  {"display": "4 Ct.", "value": "4 Swirl Bars"},
+                  {"display": "2 Ct.", "value": "2 Swirl Bars"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Swirl Bars"}
+                ]
+              }
+            ],
+            "more_info_link": "PBS.html"
+          },
+          {
+            "name": "Blondies",
+            "image": "images/Blondies.jpg",
+            "alt": "Blondies",
+            "pricing": [
+              {"option": "6 Ct.", "price": "$6"},
+              {"option": "4 Ct.", "price": "$5"},
+              {"option": "2 Ct.", "price": "$3"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "6 Ct.", "value": "6 Ct. Blondies"},
+                  {"display": "4 Ct.", "value": "4 Ct. Blondies"},
+                  {"display": "2 Ct.", "value": "2 Ct. Blondies"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Blondies"}
+                ]
+              }
+            ],
+            "more_info_link": "Bl.html"
+          },
+          {
+            "name": "Brownies",
+            "image": "images/Brownies.jpg",
+            "alt": "Brownies",
+            "pricing": [
+              {"option": "6 Ct.", "price": "$6"},
+              {"option": "4 Ct.", "price": "$5"},
+              {"option": "2 Ct.", "price": "$3"}
+            ],
+            "form_selects": [
+              {
+                "label": "Choose Amount",
+                "name": "category",
+                "options": [
+                  {"display": "6 Ct.", "value": "6 Ct. Brownies"},
+                  {"display": "4 Ct.", "value": "4 Ct. Brownies"},
+                  {"display": "2 Ct.", "value": "2 Ct. Brownies"},
+                  {"display": "Different Amount (Type Below)", "value": "Custom Order Brownies"}
+                ]
+              },
+              {
+                "label": "Chocolate Frosting",
+                "name": "category",
+                "options": [
+                  {"display": "Yes", "value": "Yes Frosting"},
+                  {"display": "No", "value": "No frosting"}
+                ]
+              }
+            ],
+            "more_info_link": "B.html"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "contact": {
+      "title": "That One Baking Place",
+      "address": "12345 Somewhere Road #54321<br>Nowhere, USA 12345",
+      "phone": "(123) 456-7890",
+      "email": "hello@thatonebakingplace.reallygreatsite.com"
+    },
+    "social_links": [
+      {"href": "https://twitter.com", "class": "icon brands fa-twitter"},
+      {"href": "https://facebook.com", "class": "icon brands fa-facebook-f"},
+      {"href": "https://instagram.com", "class": "icon brands fa-instagram"},
+      {"href": "https://linkedin.com", "class": "icon brands fa-linkedin-in"}
+    ],
+    "copyright": "© That One Baking Place. All rights reserved."
+  }
+}
