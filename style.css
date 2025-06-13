@@ -117,3 +117,43 @@ header{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Slideshow */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider .slide {
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider .nav-previous,
+.slider .nav-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.slider .nav-previous {
+    left: 10px;
+}
+
+.slider .nav-next {
+    right: 10px;
+}

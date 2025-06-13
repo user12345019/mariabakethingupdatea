@@ -24,7 +24,7 @@ let cart = [];
                 newProduct.dataset.id = product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
-                `<img src="${product.image}" alt="">
+                `<img src="${product.image}" alt="${product.name}">
                 <h2>${product.name}</h2>
                 <div class="price">$${product.price}</div>
                 <button class="addCart">Add To Cart</button>`;
@@ -140,5 +140,6 @@ const initApp = () => {
             addCartToHTML();
         }
     })
+    .catch(error => console.error('Error loading products:', error));
 }
 initApp();

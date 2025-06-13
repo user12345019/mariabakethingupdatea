@@ -5,10 +5,10 @@
   "header": {
     "logo": "That One Baking Place",
     "nav_links": [
-      {"text": "Home", "href": "index.html", "class": "icon solid fa-home scrolly"},
-      {"text": "Menu", "href": "#menu", "class": "icon solid fa-utensils scrolly"},
-      {"text": "About", "href": "about.html", "class": "icon solid fa-user scrolly"},
-      {"text": "Contact", "href": "contact.html", "class": "icon solid fa-envelope scrolly"}
+      {"text": "Home", "href": "index.html", "class": "icon solid fa-home"},
+      {"text": "Menu", "href": "menu.html", "class": "icon solid fa-utensils"},
+      {"text": "About", "href": "about.html", "class": "icon solid fa-user"},
+      {"text": "Contact", "href": "contact.html", "class": "icon solid fa-envelope"}
     ],
     "dropdown": {
       "trigger": {"text": "Menu", "href": "#menu", "class": "icon solid fa-utensils scrolly"},
@@ -21,7 +21,7 @@
     }
   },
   "menu": {
-    "notice": "Due to rising operational costs some of our products have increased in price <br> Please make orders at least a week in advance to allow adequate time for completion",
+    "notice": "Due to rising operational costs some of our products have increased in price. Please make orders at least a week in advance to allow adequate time for completion.",
     "title": "Our Menu",
     "categories": [
       {
@@ -30,74 +30,35 @@
         "subtitle": "The fresh bread you didn't know you needed!",
         "products": [
           {
+            "id": "refreshing-rolls",
             "name": "Refreshing Rolls",
             "image": "images/rollsmenu.jpg",
             "alt": "Refreshing Rolls",
             "pricing": [
-              {"option": "1 Cluster", "price": "$6"},
-              {"option": "1/2 Dozen", "price": "$4"}
-            ],
-            "form_selects": [
-              {
-                "label": "Choose Amount",
-                "name": "category",
-                "options": [
-                  {"display": "1 Cluster", "value": "1 Dozen Refreshing Rolls"},
-                  {"display": "1/2 Dozen", "value": "1/2 Dozen Refreshing Rolls"},
-                  {"display": "Different Amount (Type Below)", "value": "Custom Order Refreshing Rolls"}
-                ]
-              }
+              {"option": "1 Cluster", "price": 6},
+              {"option": "1/2 Dozen", "price": 4}
             ],
             "more_info_link": "RR.html"
           },
           {
+            "id": "cinnamon-rolls",
             "name": "Cinnamon Rolls",
             "image": "images/crollsmenu.jpg",
             "alt": "Cinnamon Rolls",
             "pricing": [
-              {"option": "1 Cluster", "price": "$16"},
-              {"option": "3 Ct.", "price": "$10"},
-              {"option": "1 Ct.", "price": "$4"}
-            ],
-            "form_selects": [
-              {
-                "label": "Choose Amount",
-                "name": "category",
-                "options": [
-                  {"display": "1 Cluster", "value": "1 Cluster Cinnamon Rolls"},
-                  {"display": "3 Ct.", "value": "3 Cinnamon Rolls"},
-                  {"display": "1 Ct.", "value": "1 Cinnamon Roll"},
-                  {"display": "Different Amount (Type Below)", "value": "Custom Order Cinnamon Rolls"}
-                ]
-              },
-              {
-                "label": "Glaze",
-                "name": "category",
-                "options": [
-                  {"display": "Yes", "value": "Yes Glaze"},
-                  {"display": "No", "value": "No Glaze"}
-                ]
-              }
+              {"option": "1 Cluster", "price": 16},
+              {"option": "3 Ct.", "price": 10},
+              {"option": "1 Ct.", "price": 4}
             ],
             "more_info_link": "CR.html"
           },
           {
+            "id": "white-bread",
             "name": "White Bread",
             "image": "images/breadhome.jpg",
             "alt": "White Bread",
             "pricing": [
-              {"option": "1 Loaf", "price": "$3"}
-            ],
-            "form_selects": [
-              {
-                "label": "Choose Amount",
-                "name": "category",
-                "options": [
-                  {"display": "1 Loaf", "value": "1 Loaf White Bread"},
-                  {"display": "2 Loaves", "value": "2 Loaf White Bread"},
-                  {"display": "Different Amount (Type Below)", "value": "Custom Order Loaf White Breads"}
-                ]
-              }
+              {"option": "1 Loaf", "price": 3}
             ],
             "more_info_link": "WB.html"
           }

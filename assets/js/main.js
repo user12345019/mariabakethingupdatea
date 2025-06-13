@@ -11,15 +11,6 @@
 		$banner = $('#banner'),
 		$header = $('#header');
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ]
-		});
-
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
@@ -27,91 +18,74 @@
 			}, 100);
 		});
 
-	// Scrolly links.
-		$('.scrolly').scrolly({
-			offset: function() { return $header.outerHeight() - 10; }
+	// Smooth scroll for anchor links
+		$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && 
+				location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: target.offset().top - $header.outerHeight()
+					}, 1000);
+				}
+			}
 		});
 
-	// Header.
-	// If the header is using "alt" styling and #banner is present, use scrollwatch
-	// to revert it back to normal styling once the user scrolls past the banner.
-		if ($header.hasClass('alt')
-		&&	$banner.length > 0) {
-
-			$window.on('resize', function() { $window.trigger('scroll'); });
-
-			$banner.scrollex({
-				bottom:		$header.outerHeight() + 5,
-				terminate:	function() { $header.removeClass('alt'); },
-				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
-			});
-
-		}
-
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			alignment: 'right'
+	// Header styling on scroll
+		$window.on('scroll', function() {
+			if ($window.scrollTop() > $banner.outerHeight()) {
+				$header.removeClass('alt');
+			} else {
+				$header.addClass('alt');
+			}
 		});
 
-	// Nav Panel.
+	// Simple dropdown menu
+		$('#nav > ul > li').hover(
+			function() { $(this).find('ul').stop().slideDown(200); },
+			function() { $(this).find('ul').stop().slideUp(200); }
+		);
 
-		// Title Bar.
-			$(
-				'<div id="navButton">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
+	// Nav Panel
+		var $navButton = $('<div id="navButton"><a href="#navPanel" class="toggle"></a></div>').appendTo($body);
+		var $navPanel = $('<div id="navPanel"><nav>' + $('#nav').navList() + '</nav></div>').appendTo($body);
 
-		// Panel.
-			$(
-				'<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $body,
-					visibleClass: 'navPanel-visible'
-				});
+		$navButton.on('click', function(e) {
+			e.preventDefault();
+			$navPanel.toggleClass('visible');
+		});
 
-	// Slider.
+	// Simple image slider
 		var $sliders = $('.slider');
-
 		if ($sliders.length > 0) {
+			var currentSlide = 0;
+			var slideCount = $sliders.find('.slide').length;
+			
+			function showSlide(index) {
+				$sliders.find('.slide').css('opacity', 0);
+				$sliders.find('.slide').eq(index).css('opacity', 1);
+			}
 
-			$sliders.slidertron({
-				mode: 'fadeIn',
-				seamlessWrap: true,
-				viewerSelector: '.viewer',
-				reelSelector: '.viewer .reel',
-				slidesSelector: '.viewer .reel .slide',
-				advanceDelay: 0,
-				speed: 400,
-				fadeInSpeed: 1000,
-				autoFit: true,
-				autoFitAspectRatio: (16 / 9),
-				navPreviousSelector: '.nav-previous',
-				navNextSelector: '.nav-next',
-				indicatorSelector: '.indicator ul li',
-				slideLinkSelector: '.link'
+			$sliders.find('.nav-previous').on('click', function() {
+				currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+				showSlide(currentSlide);
 			});
 
-			$window
-				.on('resize load', function() {
-					$sliders.trigger('slidertron_reFit');
-				})
-				.trigger('resize');
+			$sliders.find('.nav-next').on('click', function() {
+				currentSlide = (currentSlide + 1) % slideCount;
+				showSlide(currentSlide);
+			});
 
+			// Auto-advance slides every 5 seconds
+			setInterval(function() {
+				currentSlide = (currentSlide + 1) % slideCount;
+				showSlide(currentSlide);
+			}, 5000);
+
+			// Show first slide
+			showSlide(0);
 		}
 
 	// Order Info Popup
