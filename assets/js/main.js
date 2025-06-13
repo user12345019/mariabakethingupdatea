@@ -114,4 +114,33 @@
 
 		}
 
+	// Order Info Popup
+		var $popup = $('#orderInfoPopup'),
+			$popupIcon = $('#orderInfoIcon'),
+			$closePopup = $('.close-popup');
+
+		// Show popup on page load
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$popup.fadeIn(300);
+			}, 500);
+		});
+
+		// Close popup when clicking the close button
+		$closePopup.on('click', function() {
+			$popup.fadeOut(300);
+		});
+
+		// Show popup when clicking the info icon
+		$popupIcon.on('click', function() {
+			$popup.fadeIn(300);
+		});
+
+		// Close popup when clicking outside
+		$(document).on('click', function(e) {
+			if ($(e.target).closest('.popup-content, .order-info-icon').length === 0) {
+				$popup.fadeOut(300);
+			}
+		});
+
 })(jQuery);
