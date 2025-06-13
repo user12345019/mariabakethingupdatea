@@ -543,34 +543,45 @@
                                 </table>
                             </div>
                             <form name="contact" action="https://formspree.io/f/mleqvqjn" method="POST">
-                                <div style="flex: 1; display: flex; flex-direction: column;">
-                                    <input type="text" name="name" id="name" value="" placeholder="Name" required style="margin-bottom: 10px;">
-                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required style="margin-bottom: 10px;">
-                                    <select name="amount" id="amount" required style="margin-bottom: 10px;">
+                                <div class="col-6 col-12">
+                                    <input type="text" name="name" id="name" value="" placeholder="Name" required>
+                                </div>
+                                <br>
+                                <div class="col-6 col-12-large">
+                                    <input type="text" name="email" id="email" value="" placeholder="Email or Phone" required>
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="amount" id="amount" required>
                                         <option value="">- Choose Amount -</option>
                                         <option value="1 strawberry pie">1</option>
                                         <option value="2 strawberry pie">2</option>
                                         <option value="Custom Order Strawberry Pie">Different Amount (Type Below)</option>
                                     </select>
-                                    <select name="size" id="size" required style="margin-bottom: 10px;">
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                    <select name="size" id="size" required>
                                         <option value="">- Choose Size -</option>
                                         <option value="6 in. strawberry">6 in.</option>
                                         <option value="9 in. strawberry">9 in.</option>
                                     </select>
-                                    <div class="col-6 col-12-large">
-                                        <input type="text"  name="address" id="address" value="" placeholder="Delivery Address (If Applicable)">
-                                    </div>
-                                
-                                    <div class="col-12">
-                                        <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
-                                    </div>
-                                    </br>
-                                    <ul class="actions">
-                                        <li>
-                                            <input type="submit" value="Submit Order">
-                                            <input type="button" value="More Info" onclick="window.location.href='Spies.html';">
-                                        </li>
                                 </div>
+                                <br>
+                                <div class="col-6 col-12-large">
+                                    <input type="text"  name="address" id="address" value="" placeholder="Delivery Address (If Applicable)">
+                                </div>
+                                <br>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Add a message" rows="1"></textarea>
+                                </div>
+                                <br>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="submit" value="Submit Order">
+                                        <input type="button" value="More Info" onclick="window.location.href='Spies.html';">
+                                    </li>
+                                </ul>
                             </form>
                         </article>
                     </div>
@@ -595,7 +606,7 @@
                     <div class="col-4 col-6-medium col-12-small" style="flex: 1 1 calc(33.33% - 20px); box-sizing: border-box;">
                         <article class="box post">
                             <a href="#" class="image fit">
-                                <img src="images/massimo-adami-OtyGZwflKd8-unsplash.jpg" alt="Chocolate Chip">
+                                <img src="images/cookiehome.jpg" alt="Chocolate Chip">
                             </a>
                             <h3>Chocolate Chip</h3>
                             <div class="table-wrapper">
@@ -1056,7 +1067,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.google.com/maps/search/platteville+farmers+market/@42.7370695,-90.4848131,14z/data=!3m1!4b1?entry=ttu" class="icon solid fa-location-dot">
+                <a href="https://www.google.com/maps/search/platteville+farmers+market/@42.7370695,-90.4848131,14z/data=!3m1!4b1?entry=ttu" class="icon solid fa-map-marker-alt">
                     <span class="label">Locate</span>
                 </a>
             </li>
